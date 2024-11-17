@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестова сторінка з CSS3 ефектами</title>
+    <style>
+body {
+    background: linear-gradient(135deg, #f9f9f9, #e0eafc); 
+    color: #000; 
+    body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /
+}
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #343a40;
+            margin-bottom: 20px;
+        }
+		
+        .box-shadow {
+            width: 300px;
+            height: 150px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+        .gradient-box {
+            width: 300px;
+            height: 150px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .rounded-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .rounded-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        .svg-image {
+            width: 100px;
+            height: auto;
+            transition: transform 0.3s;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .svg-image:hover {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .effects div, .effects button, .effects img {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №6</h1>
+        <p>Дослідження можливостей HTML5 та CSS3</p>
+    </header>
+
+    <main>
+        <section class="effects">
+            <h2>CSS3 Ефекти</h2>
+            <div class="box-shadow">
+			 Це блок з ефектом тіні. Він створює відчуття глибини.
+			</div>
+            <div class="gradient-box">
+			 Блок з градієнтним фоном. Виглядає стильно і сучасно!
+			</div>
+            <button class="rounded-button">Натисніть тут</button>
+            <img src="image.svg" alt="SVG зображення" class="svg-image">
+			<p>Логотип у форматі SVG. Змінює розмір і обертається при наведенні.</p>
+        </section>
+    </main>
+</body>
+</html>
